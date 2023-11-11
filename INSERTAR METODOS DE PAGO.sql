@@ -2,13 +2,7 @@
 INSERT INTO FORMA_PAGO (
     NOMBRE
 ) VALUES (
-    'Tarjeta de Crédito'
-);
-
-INSERT INTO FORMA_PAGO (
-    NOMBRE
-) VALUES (
-    'Transferencia Bancaria'
+    'Tarjeta de Credito'
 );
 
 INSERT INTO FORMA_PAGO (
@@ -20,5 +14,5 @@ INSERT INTO FORMA_PAGO (
 INSERT INTO FORMA_PAGO (
     NOMBRE
 ) VALUES (
-    'Tarjeta de Débito'
+    'Tarjeta de Debito'
 )
