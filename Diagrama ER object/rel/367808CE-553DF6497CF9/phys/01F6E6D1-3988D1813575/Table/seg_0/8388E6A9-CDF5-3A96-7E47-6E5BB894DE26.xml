@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DETALLE_VENTA" directorySegmentName="seg_0" id="8388E6A9-CDF5-3A96-7E47-6E5BB894DE26">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>BED9A120-D9D8-200C-AB5C-498B98CF789D</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1E147222-33F6-7983-FC66-213F06BACBD9</segment>
+<tableSpace>B6764EF1-4ACC-29DB-358F-4FB05CE86D45</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_PRODUCTO" id="12094896-D205-F7D2-9201-EB12C42FC228">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IMPUESTOS" id="316337D6-439D-851B-0365-B1B73F08BE1A">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOTAL" id="37707FFD-DE3A-9FB6-2276-C87D7B20777A">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CANTIDAD" id="5E0BFADE-59D7-0BC7-9746-65932381D976">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBTOTAL" id="668E9045-5AE3-ABB4-D4CB-5BBE45EA6BD1">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_VENTA" id="98287CAF-2F62-6C53-5B1F-68990DBEE286">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCUENTO" id="CDAED64E-16BE-21FE-B48E-05BE760812FB">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DETALLE_VENTA" id="E22E6B5B-D5A3-A426-C9CB-B5605F8616B7">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_DETALLE_VENTA&quot;.&quot;NEXTVAL&quot;</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008983" id="E98E1D6F-120F-D7BB-2F92-88176C775776">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008984" id="EB3E2892-AC61-71CE-32FC-8127BC3643CA">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DETALLE_VENTA_PK" id="0B7434D7-BB96-C4F9-ECDE-CD77300934B2">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>BED9A120-D9D8-200C-AB5C-498B98CF789D</schemaObject>
+<segment>FB7A2291-8642-604C-1FB3-CD7D69E8F917</segment>
+<tableSpace>B6764EF1-4ACC-29DB-358F-4FB05CE86D45</tableSpace>
+<indexSegment>FB7A2291-8642-604C-1FB3-CD7D69E8F917</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,320 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30184478-0C47-11E8-2556-F6BEA3EEB724" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="USUARIO">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>USUARIO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="328C2526-0AFD-C91C-0957-5A2A53D6AFC4">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>ID_USUARIO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_USUARIO&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_USUARIO" id="60BC70EB-32B6-FF4A-A665-6E443320CE0D">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>NOMBRE_USUARIO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_NOMBRE" id="F227C527-899A-9499-8ADC-4C6AE82F6288">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>PRIMER_NOMBRE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="6BA99F1F-A2AA-8858-DBA6-84EB8D3AFFBA">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>SEGUNDO_NOMBRE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="90583488-2438-DB86-DBFC-E75A121DD034">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>PRIMER_APELLIDO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="AB56F0A5-A26C-341E-9374-70BF8E7FB249">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>SEGUNDO_APELLIDO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_APELLIDOS" id="4E58ACE3-BF0E-A683-E415-9EA7025D958A">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>OTROS_APELLIDOS</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="96FF56C9-4629-0FDF-F858-07FAD417C5B1">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>PASSWORD</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALLE" id="109108F8-EB30-1C2D-1F6F-F4AF727BD1F1">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>CALLE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLONIA" id="80D7AADE-9B77-04CB-1AD8-70C7EE843AF4">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>COLONIA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZONA" id="1EDFB58C-0709-A360-469F-D7D5FE165EF1">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>ZONA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD" id="2ACC669A-0395-7766-8BE1-3AE5B2089C59">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>CIUDAD</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUNICIPIO" id="FBE17ABA-F34B-3DED-76C1-FE924322C368">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>MUNICIPIO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTO" id="C7CFF65E-EFF6-7E8E-5387-5B427A57B3BE">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>DEPARTAMENTO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_POSTAL" id="36022C3E-2300-16C1-BD1B-735B856CBC6C">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>CODIGO_POSTAL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="DCD2E423-D28D-AF63-5DD1-EDB44671C35D">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>TELEFONO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIT" id="E6CC0B89-1453-091F-CD6D-D4FAE007F380">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>NIT</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DPI" id="810942DF-C6ED-76DC-227E-70DB74E836D2">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>DPI</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ROL" id="75D73698-EE83-2810-8F99-D547B762034D">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>ID_ROL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="116D9573-0636-2FEB-8D74-7E655352F41D" referredColumn="913509B0-EC14-379E-CCD7-2BB0B8D88821"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="578B5007-4A5E-0FE3-09B6-6BC6DE122486" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="USUARIO_PK">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008923</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="328C2526-0AFD-C91C-0957-5A2A53D6AFC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8962E6FA-F9AF-87F9-79AF-12539AB430E7" name="SYS_C008926">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75D73698-EE83-2810-8F99-D547B762034D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

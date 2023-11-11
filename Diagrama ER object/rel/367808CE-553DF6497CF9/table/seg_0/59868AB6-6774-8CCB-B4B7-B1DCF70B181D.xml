@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59868AB6-6774-8CCB-B4B7-B1DCF70B181D" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="ORDEN_COMPRA">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>ORDEN_COMPRA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ORDEN_COMPRA" id="E7E3C5F0-B5F0-45C6-8C53-17BDE587D622">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ORDEN_COMPRA</sourceObjSchema>
+<sourceObjName>ID_ORDEN_COMPRA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_ORDEN_COMPRA&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PROVEEDOR" id="7EA477DC-8B4A-F524-71AC-5764B6533F74">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ORDEN_COMPRA</sourceObjSchema>
+<sourceObjName>ID_PROVEEDOR</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E13D6794-27B7-67FA-5E21-2ADFDF2840C0" referredColumn="1828B5D7-4E15-5E39-8C5D-44BA71B3A966"/>
+</associations>
+</Column>
+<Column name="FECHA_ORDEN" id="C38E3EF0-062B-CF59-2C4F-2D4401B54FF3">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ORDEN_COMPRA</sourceObjSchema>
+<sourceObjName>FECHA_ORDEN</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL" id="FBB65C1C-84E8-C931-145C-4EA83AB40A5E">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ORDEN_COMPRA</sourceObjSchema>
+<sourceObjName>TOTAL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9D8F80CD-FECF-47E2-DFBF-337BA4BF14A4" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="ORDEN_COMPRA_PK">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008995</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7E3C5F0-B5F0-45C6-8C53-17BDE587D622"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DCB26247-12E0-FFD8-E5DC-2366CB6C4ED8" name="SYS_C008996">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EA477DC-8B4A-F524-71AC-5764B6533F74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="28637BEB-5176-3F55-92A8-7D9C6DFFAF6A" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="ROL">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>ROL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ROL" id="913509B0-EC14-379E-CCD7-2BB0B8D88821">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ROL</sourceObjSchema>
+<sourceObjName>ID_ROL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_ROL&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="65E551CC-DA28-AAD2-EC49-123C4A3DCB65">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ROL</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B40DE46-EF5E-B7E5-12D9-3ABBF4EE1991" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="ROL_PK">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008913</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="913509B0-EC14-379E-CCD7-2BB0B8D88821"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="COMPRA" directorySegmentName="seg_0" id="794592A3-F402-3180-31AB-79A481BC66A9">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>BED9A120-D9D8-200C-AB5C-498B98CF789D</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1E147222-33F6-7983-FC66-213F06BACBD9</segment>
+<tableSpace>B6764EF1-4ACC-29DB-358F-4FB05CE86D45</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_COMPRA" id="0DD086E5-AA9A-3C8F-E1FF-63B4EE1F0B42">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_COMPRA&quot;.&quot;NEXTVAL&quot;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="FECHA_COMPRA" id="42D970B3-EAEC-D761-762C-3CA1893C5E10">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_CREACION" id="5188AE62-37CA-C808-1E07-2B76B0A6F382">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PROVEEDOR" id="5C9E4E3A-372C-4DB3-5CC4-1F7A35AADCF0">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOTAL" id="6356492D-0B72-EFA2-FF02-D31812A24E47">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MOD" id="6C759447-E968-FA0B-8D1D-5A8B2D9CE30D">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO" id="877F571A-FBC3-4BF9-EE2D-3EB07ACD6D7D">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="D372DBA2-20DD-9C6B-181D-4EF99201437F">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_MOD" id="EE6A0126-94F3-9F5A-71F9-33FAD1B8820E">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008990" id="558F1394-3995-8B6B-291A-B049FA25111A">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008991" id="854894AA-7CAC-5B28-C55F-84E6BCF78E4B">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C008989" id="CE974714-03DE-9560-0552-9457D8852C07">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COMPRA_PK" id="F0572C64-EAA4-DB82-EC9B-E7058E9A81B7">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>BED9A120-D9D8-200C-AB5C-498B98CF789D</schemaObject>
+<segment>FB7A2291-8642-604C-1FB3-CD7D69E8F917</segment>
+<tableSpace>B6764EF1-4ACC-29DB-358F-4FB05CE86D45</tableSpace>
+<indexSegment>FB7A2291-8642-604C-1FB3-CD7D69E8F917</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

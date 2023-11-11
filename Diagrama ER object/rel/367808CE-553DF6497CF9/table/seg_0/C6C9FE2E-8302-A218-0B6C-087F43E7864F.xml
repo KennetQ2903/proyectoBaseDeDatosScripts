@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C6C9FE2E-8302-A218-0B6C-087F43E7864F" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="VENTA">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>VENTA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_VENTA" id="059068EB-E783-0181-9838-3D0644AEA825">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>ID_VENTA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_VENTA&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CLIENTE" id="30DD3F79-556A-4831-FF7C-BF0E2CC96122">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>ID_CLIENTE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E2BA1337-CA1B-6A3A-8FF0-A2F6B8ED4D64" referredColumn="C06DB60B-0963-1CD1-0F39-A3CB9487F896"/>
+</associations>
+</Column>
+<Column name="ID_USUARIO" id="5911208D-276C-2BD8-3995-C75F2F39CE7E">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>ID_USUARIO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23919843-86C8-61C3-042F-36DFEFBDE2C6" referredColumn="328C2526-0AFD-C91C-0957-5A2A53D6AFC4"/>
+</associations>
+</Column>
+<Column name="ID_FORMA_PAGO" id="ABC425C0-31BD-C8BC-3AFF-DD1251AE8934">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>ID_FORMA_PAGO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75968F11-3902-DE49-4517-9DBD2F5E243E" referredColumn="82C0C37A-A228-2FEB-F763-BCB46B9871EF"/>
+</associations>
+</Column>
+<Column name="ID_SUCURSAL" id="B104ACA6-4BB1-860C-F3E0-EA2DA76C3552">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>ID_SUCURSAL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D7DE65A-4DBC-984C-1957-16672A6C9255" referredColumn="838F16C8-5FC6-EE7D-07D2-3D4A053547A7"/>
+</associations>
+</Column>
+<Column name="GUID" id="5B06CE21-3893-C2BC-C82F-3BC73DB8A23A">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>GUID</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENTA" id="86DE7C18-34FB-204B-2EE4-C93ACD521516">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>FECHA_VENTA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOTAL" id="1555B573-C859-3519-DA4D-FB915FE82727">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>VENTA</sourceObjSchema>
+<sourceObjName>TOTAL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5ED2A557-C5D9-14AD-1533-D6208F55DB6C" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="VENTA_PK">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008976</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="059068EB-E783-0181-9838-3D0644AEA825"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6172E53B-36B4-3E12-CE21-3EF6CBD0A627" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="VENTA_GUID_UN">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008977</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B06CE21-3893-C2BC-C82F-3BC73DB8A23A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE3C919C-0537-BA29-AC34-CD42C66A6537" name="SYS_C008978">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30DD3F79-556A-4831-FF7C-BF0E2CC96122"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6034EC2-3DEE-B3E3-1C46-FA7542F12253" name="SYS_C008979">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5911208D-276C-2BD8-3995-C75F2F39CE7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FADD92A-2A58-EF69-4675-A91098EBBDE3" name="SYS_C008980">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABC425C0-31BD-C8BC-3AFF-DD1251AE8934"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F3E0941-F389-527C-4A6C-9CF5A600F118" name="SYS_C008981">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B104ACA6-4BB1-860C-F3E0-EA2DA76C3552"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

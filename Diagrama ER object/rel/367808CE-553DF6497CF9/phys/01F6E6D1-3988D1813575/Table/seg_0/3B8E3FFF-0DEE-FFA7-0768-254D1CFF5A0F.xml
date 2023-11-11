@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="BODEGA" directorySegmentName="seg_0" id="3B8E3FFF-0DEE-FFA7-0768-254D1CFF5A0F">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>BED9A120-D9D8-200C-AB5C-498B98CF789D</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1E147222-33F6-7983-FC66-213F06BACBD9</segment>
+<tableSpace>B6764EF1-4ACC-29DB-358F-4FB05CE86D45</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ZONA" id="203BEADF-5968-8631-6158-CD76A92B1B70">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_BODEGA" id="2102D2C4-E31F-5F43-E41E-EC3EB8F39BCF">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_BODEGA&quot;.&quot;NEXTVAL&quot;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="FECHA_MOD" id="27A6774A-0DDD-1276-A72A-20C186DF9C34">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MUNICIPIO" id="592C54BF-697F-212B-B23D-68E779102899">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONO" id="60293B3B-2564-D6CB-F057-582B7F9D0CA3">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTAMENTO" id="7B5998B0-D0EE-C337-F629-9F507CEA1483">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CALLE" id="81F7CDE9-885A-3A86-F5A2-3ECEDBB52327">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CIUDAD" id="8642D408-8702-9F57-A2FB-ABF564E0B94F">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_MOD" id="A4F2D621-9D42-9EF9-8325-8D1E42C8836D">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO" id="B3093699-4F2A-FB3F-4B55-098A03E068A2">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>1</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="USUARIO_CREACION" id="BCFF7587-6067-7B49-032A-792279803911">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO_POSTAL" id="C9623427-F524-8620-F3C4-0034F6539C59">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="CD6E8A62-CE58-35F1-16D7-BBD011BDEBEA">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COLONIA" id="E29283F2-238D-B0A9-3F4B-19C53B471E15">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="F0E3703C-8CB7-4536-6BD7-F2DC1C5BA035">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>SYSDATE</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C009014" id="9679C47A-00BB-3BAC-035B-1D5D9F3FD834">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C009013" id="C8D1990B-153E-DB67-B8B2-FB1C4CB3E2A2">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:04 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BODEGA_PK" id="F87C0C14-1B06-F6DD-5F10-40AA04DF8DAA">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>BED9A120-D9D8-200C-AB5C-498B98CF789D</schemaObject>
+<segment>FB7A2291-8642-604C-1FB3-CD7D69E8F917</segment>
+<tableSpace>B6764EF1-4ACC-29DB-358F-4FB05CE86D45</tableSpace>
+<indexSegment>FB7A2291-8642-604C-1FB3-CD7D69E8F917</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

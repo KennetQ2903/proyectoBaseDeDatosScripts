@@ -1,0 +1,434 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94CA9343-9D59-A004-E534-C28CCE7E391B" schemaObject="8E165A69-7990-2185-4E34-A8EFE7C40481" name="PROVEEDOR">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>PROVEEDOR</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PROVEEDOR" id="2FCA78D2-7BF6-9A29-A3A4-B81150E5505B">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>ID_PROVEEDOR</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_PROVEEDOR&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_NOMBRE" id="B738D356-93D0-AFB3-08AC-CE426DDCAA5D">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>PRIMER_NOMBRE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="5F02117F-079E-313A-1BA6-520E9182CDC6">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>SEGUNDO_NOMBRE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="8E488F48-B8C6-F4F1-F393-C60FD101A5AB">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>PRIMER_APELLIDO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="7BB9A984-EA0D-694F-B9B5-DF3F124F9325">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>SEGUNDO_APELLIDO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OTROS_APELLIDOS" id="EE7A13DA-7FC7-2587-25C7-9CAC6A583767">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>OTROS_APELLIDOS</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CALLE" id="BD736CA1-7B6A-7CB0-C446-C5207EBFB93E">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>CALLE</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COLONIA" id="2C380EDE-89FF-FC0F-6922-B50D680B530B">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>COLONIA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZONA" id="E1183786-EF36-97B1-C9BD-6E57D0050FEB">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>ZONA</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD" id="2270FA48-CB92-88A2-0513-C91D42A81CF1">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>CIUDAD</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MUNICIPIO" id="9FA98FB6-4806-7EC8-F766-0756532DAEEE">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>MUNICIPIO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBCE3522-35C3-1EBB-3C9F-5B2232E2F3A1" referredColumn="04BE3ED8-9F9E-91CB-B6E7-95F29A63D946"/>
+</associations>
+</Column>
+<Column name="DEPARTAMENTO" id="263C9BD8-AB0A-F1A1-218E-3A392924FBF9">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>DEPARTAMENTO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7FA5607-4D5E-4733-7801-F569F51BD322" referredColumn="57179113-9192-88B4-0375-3ED48C6BA05E"/>
+</associations>
+</Column>
+<Column name="CODIGO_POSTAL" id="2EB0FEDB-9B76-CE60-C364-E31BF864E14B">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>CODIGO_POSTAL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="34D3CE02-3354-5B5B-A436-BDEA057DF213">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>TELEFONO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIT" id="444F36B0-494B-40E0-BB80-D544405F264E">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>NIT</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DPI" id="73F03498-2309-BE83-828B-409E297E4E13">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>DPI</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="C41B3ED9-08C8-BD43-BC16-85EBBC44D8E0">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 BYTE</dataTypeSize>
+<ownDataTypeParameters>250 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USUARIO_CREACION" id="8D21C886-3CFE-0682-1EF0-84D3C3FEB355">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>USUARIO_CREACION</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6527680-7DEF-F0C8-4666-2CEDEB86A221" referredColumn="772B366A-089E-B509-097C-688459ECCA09"/>
+</associations>
+</Column>
+<Column name="USUARIO_MOD" id="E6E325A9-8CF5-A908-8F62-736FF0A2DDFF">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>USUARIO_MOD</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F59D751-75C5-D2C2-433D-2C047BE6D597" referredColumn="772B366A-089E-B509-097C-688459ECCA09"/>
+</associations>
+</Column>
+<Column name="FECHA_CREACION" id="DF5D1375-F27A-523C-04D4-197D27F268CC">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>FECHA_CREACION</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MOD" id="D0CAC614-DE9C-73F6-2CC5-62DDA61B5296">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>FECHA_MOD</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="46284603-82B0-6A08-C5C3-CF1CA293BFDF">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>PROVEEDOR</sourceObjSchema>
+<sourceObjName>ESTADO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<constraintName>SYS_C008946</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,1,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98B0BAC1-C7E1-10A3-5DB2-F3F33B7938B0" schemaObject="8E165A69-7990-2185-4E34-A8EFE7C40481" name="PROVEEDOR_PK">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008947</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FCA78D2-7BF6-9A29-A3A4-B81150E5505B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCCA0E07-A2B2-296B-E78D-19603325CE0C" schemaObject="8E165A69-7990-2185-4E34-A8EFE7C40481" name="PROVEEDOR_NIT_UN">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008948</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="444F36B0-494B-40E0-BB80-D544405F264E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="538E18F2-9004-4EF6-368E-90C34EE8AFD2" schemaObject="8E165A69-7990-2185-4E34-A8EFE7C40481" name="PROVEEDOR_DPI_UN">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008949</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73F03498-2309-BE83-828B-409E297E4E13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D668AECD-1BCB-0DEF-B62B-1BBEA131E9F2" name="SYS_C008950">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:55 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FA98FB6-4806-7EC8-F766-0756532DAEEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E312E81-F3CB-A878-4B93-FAABB38567AF" name="SYS_C008951">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:55 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="263C9BD8-AB0A-F1A1-218E-3A392924FBF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8772B2E-9057-6EEF-6386-77F808931828" name="SYS_C008952">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:55 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D21C886-3CFE-0682-1EF0-84D3C3FEB355"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81F0CCA6-E31A-B4A4-C8FC-DCE742FFA293" name="SYS_C008953">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:55 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6E325A9-8CF5-A908-8F62-736FF0A2DDFF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DEPARTAMENTO" directorySegmentName="seg_0" id="DB3E840C-A5FD-D0DD-DCB4-F6CC8CD9EA73">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>8E165A69-7990-2185-4E34-A8EFE7C40481</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>4A59A664-C139-5546-A53A-4B2F44CE19C5</segment>
+<tableSpace>E28F43B2-FB29-AF31-70A5-81051AA92514</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CODIGO" id="53BBDB26-A8AE-6C39-F4CE-85C85FFE4971">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_DEPARTAMENTO" id="57179113-9192-88B4-0375-3ED48C6BA05E">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_DEPARTAMENTO&quot;.&quot;NEXTVAL&quot;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="F142ACBA-BA36-4ECB-A8F2-4D56F93862D3">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPARTAMENTO_PK" id="440909D1-43DF-BF9F-86CF-F0B7FE1B34CB">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:54 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<schemaObject>8E165A69-7990-2185-4E34-A8EFE7C40481</schemaObject>
+<segment>B5C69699-0E6E-90CC-0F88-D9702D074E0A</segment>
+<tableSpace>E28F43B2-FB29-AF31-70A5-81051AA92514</tableSpace>
+<indexSegment>B5C69699-0E6E-90CC-0F88-D9702D074E0A</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

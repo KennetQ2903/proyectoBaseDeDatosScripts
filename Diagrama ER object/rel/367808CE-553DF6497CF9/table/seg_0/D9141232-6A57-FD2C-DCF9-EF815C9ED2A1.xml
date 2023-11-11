@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9141232-6A57-FD2C-DCF9-EF815C9ED2A1" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="ROLACCESO">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>ROLACCESO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1939D9CA-698C-3815-82B9-C052E4330E69">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ROLACCESO</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>&quot;SYSTEM&quot;.&quot;SEQ_ROL_ACCESO&quot;.&quot;NEXTVAL&quot;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ROL" id="CF0962B5-FB8A-F073-787E-3D0CAE11BE33">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ROLACCESO</sourceObjSchema>
+<sourceObjName>ID_ROL</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85F3B112-5060-12FD-71E8-FB5E8A2B9408" referredColumn="913509B0-EC14-379E-CCD7-2BB0B8D88821"/>
+</associations>
+</Column>
+<Column name="ID_ACCESO" id="D48565A8-9721-866E-06CA-0D175AD25042">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>ROLACCESO</sourceObjSchema>
+<sourceObjName>ID_ACCESO</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D12D3A06-27BD-244B-504E-8C1562FF4804" referredColumn="D6AD3D54-121D-9C9C-37C2-4C973E40A19D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8846DB67-BED1-A8FD-4095-CDBFCDB07365" schemaObject="BED9A120-D9D8-200C-AB5C-498B98CF789D" name="ROLACCESO_PK">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008916</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1939D9CA-698C-3815-82B9-C052E4330E69"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47B325B0-14DD-589C-8420-77250C62B0BA" name="SYS_C008917">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF0962B5-FB8A-F073-787E-3D0CAE11BE33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C3E139D-B056-7E88-EE37-F06C54025F4F" name="SYS_C008918">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 01:01:03 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D48565A8-9721-866E-06CA-0D175AD25042"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

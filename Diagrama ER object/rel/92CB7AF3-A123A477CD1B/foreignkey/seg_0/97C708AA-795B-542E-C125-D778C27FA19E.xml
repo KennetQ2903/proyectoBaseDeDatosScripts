@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="97C708AA-795B-542E-C125-D778C27FA19E" containerWithKeyObject="3FE17240-761C-D603-360F-CB64EFE1A2C4" localFKIndex="2667DDF3-8F69-6A65-E9CA-ACEC0004787C" name="SYS_C008980">
+<sourceConnName>BD1</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C008980</sourceObjName>
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:55 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+<referredTableLongName>SYSTEM.FORMA_PAGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>84DD7A7C-B01C-E206-B1A0-C017A22AA7E1</referredTableID>
+<keyObject>B1CD874F-F436-6E70-C3C7-2441BDA3349D</keyObject>
+<referredKeyID>B1CD874F-F436-6E70-C3C7-2441BDA3349D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_FORMA_PAGO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

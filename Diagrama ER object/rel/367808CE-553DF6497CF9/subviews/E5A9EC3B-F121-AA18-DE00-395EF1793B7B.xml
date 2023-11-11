@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="DIAGRAMA ER - SubView_1" id="E5A9EC3B-F121-AA18-DE00-395EF1793B7B">
+<createdBy>Namikaze</createdBy>
+<modifiedBy>Namikaze</modifiedBy>
+<createdTime>2023-11-11 01:16:30 UTC</createdTime>
+<autoRoute>true</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<showSchemaName>false</showSchemaName>
+</Diagram>

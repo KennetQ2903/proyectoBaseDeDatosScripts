@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.StorageDesignOraclev20c" name="Oracle Database 21c" id="2B5A8BBE-4307-0295-FAE7-E52DA2832525" siteID="01F6E6D1-21D0-CFBD-ABDD-3988D1813575" siteName="Oracle Database 21c" siteType="17">
+<createdBy>Namikaze</createdBy>
+<createdTime>2023-11-11 00:46:53 UTC</createdTime>
+<ownerDesignName>Diagrama ER object</ownerDesignName>
+</StorageDesignOraclev20c>
