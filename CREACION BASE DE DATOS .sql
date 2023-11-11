@@ -3,12 +3,10 @@
 CREATE SEQUENCE SEQ_FORMA_PAGO
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA FORMAS DE PAGO
 CREATE TABLE FORMA_PAGO (
@@ -20,12 +18,10 @@ CREATE TABLE FORMA_PAGO (
 CREATE SEQUENCE SEQ_DEPARTAMENTO
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA DEPARTAMENTO
 CREATE TABLE DEPARTAMENTO (
@@ -38,12 +34,10 @@ CREATE TABLE DEPARTAMENTO (
 CREATE SEQUENCE SEQ_MUNICIPIO
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA MUNICIPIOS
 CREATE TABLE MUNICIPIO (
@@ -58,12 +52,10 @@ CREATE TABLE MUNICIPIO (
 CREATE SEQUENCE SEQ_ROL
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- Creaci�n de la tabla roles
 CREATE TABLE ROL (
@@ -75,12 +67,10 @@ CREATE TABLE ROL (
 CREATE SEQUENCE SEQ_ACCESO
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- Creaci�n de la tabla accesos con relaci�n a usuarios y roles
 CREATE TABLE ACCESOS (
@@ -92,12 +82,10 @@ CREATE TABLE ACCESOS (
 CREATE SEQUENCE SEQ_ROL_ACCESO
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 CREATE TABLE ROLACCESO (
     ID NUMBER DEFAULT SEQ_ROL_ACCESO.NEXTVAL PRIMARY KEY,
@@ -113,12 +101,10 @@ CREATE TABLE ROLACCESO (
 CREATE SEQUENCE SEQ_USUARIO
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- Creaci�n de la tabla usuarios
 CREATE TABLE USUARIO (
@@ -151,12 +137,10 @@ CREATE TABLE USUARIO (
 CREATE SEQUENCE SEQ_CLIENTE
   START WITH 1 -- Valor inicial
   INCREMENT BY 1 -- Incremento en cada siguiente valor
-  MINVALUE 1 -- Valor m�nimo permitido
-  MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-  NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+  NOCACHE -- No almacenar valores en caché
   NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- Creaci�n de la tabla Clientes
 CREATE TABLE CLIENTE (
@@ -194,12 +178,10 @@ CREATE TABLE CLIENTE (
 CREATE SEQUENCE SEQ_PROVEEDOR
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- Creaci�n de la tabla vendedores
 CREATE TABLE PROVEEDOR (
@@ -237,12 +219,10 @@ CREATE TABLE PROVEEDOR (
 CREATE SEQUENCE SEQ_PRODUCTO
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- Creaci�n de la tabla Productos
 CREATE TABLE PRODUCTO (
@@ -268,12 +248,10 @@ CREATE TABLE PRODUCTO (
 CREATE SEQUENCE SEQ_SUCURSAL
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA SUCURSAL
 CREATE TABLE SUCURSAL (
@@ -304,12 +282,10 @@ CREATE TABLE SUCURSAL (
 CREATE SEQUENCE SEQ_VENTA
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA VENTAS
 CREATE TABLE VENTA (
@@ -331,12 +307,10 @@ CREATE TABLE VENTA (
 CREATE SEQUENCE SEQ_DETALLE_VENTA
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA DETALLE DE VENTAS
 CREATE TABLE DETALLE_VENTA (
@@ -356,12 +330,10 @@ CREATE TABLE DETALLE_VENTA (
 CREATE SEQUENCE SEQ_COMPRA
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA COMPRAS
 CREATE TABLE COMPRA (
@@ -384,12 +356,10 @@ CREATE TABLE COMPRA (
 CREATE SEQUENCE SEQ_DETALLE_COMPRA
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA DETALLE DE COMPRAS
 CREATE TABLE DETALLE_COMPRA (
@@ -409,12 +379,10 @@ CREATE TABLE DETALLE_COMPRA (
 CREATE SEQUENCE SEQ_ORDEN_COMPRA
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 --CREACION DE LA TABLA ORDENES DE COMPRA
 CREATE TABLE ORDEN_COMPRA (
@@ -429,12 +397,10 @@ CREATE TABLE ORDEN_COMPRA (
 CREATE SEQUENCE SEQ_COLABORADOR
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 CREATE TABLE COLABORADOR (
     ID_COLABORADOR NUMBER DEFAULT SEQ_COLABORADOR.NEXTVAL PRIMARY KEY,
@@ -471,12 +437,10 @@ CREATE TABLE COLABORADOR (
 CREATE SEQUENCE SEQ_BODEGA
     START WITH 1 -- Valor inicial
     INCREMENT BY 1 -- Incremento en cada siguiente valor
-    MINVALUE 1 -- Valor m�nimo permitido
-    MAXVALUE 999999999 -- Valor m�ximo (puedes ajustarlo seg�n tus necesidades)
-    NOCACHE -- No almacenar valores en cach�
+MINVALUE 1 -- Valor mínimo permitido
+MAXVALUE 999999999 -- Valor máximo
+    NOCACHE -- No almacenar valores en caché
     NOCYCLE;
-
--- No reiniciar despu�s de llegar al valor m�ximo
 
 -- CREACION DE LA TABLA BODEGAS
 CREATE TABLE BODEGA(
