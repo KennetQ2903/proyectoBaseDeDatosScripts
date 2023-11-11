@@ -1,718 +1,504 @@
 -- ***************************************************** DICCIONARIOS *******************************************************
-
 -- CREACION DE LA SECUENCIA FORMAS DE PAGO
-CREATE SEQUENCE seq_forma_pago
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
+CREATE SEQUENCE SEQ_FORMA_PAGO
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
 -- CREACION DE LA TABLA FORMAS DE PAGO
-CREATE TABLE Forma_Pago (
-    id_forma_pago NUMBER DEFAULT seq_forma_pago.NEXTVAL PRIMARY KEY,
-    nombre VARCHAR2(100)
+CREATE TABLE FORMA_PAGO (
+    ID_FORMA_PAGO NUMBER DEFAULT SEQ_FORMA_PAGO.NEXTVAL PRIMARY KEY,
+    NOMBRE VARCHAR2(50)
 );
 
 -- CREACION DE LA SECUENCIA DEPARTAMENTOS
-CREATE SEQUENCE seq_departamento
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- CREACION DE LA TABLA DEPARTAMENTO  
-CREATE TABLE Departamento (
-    id_departamento NUMBER DEFAULT seq_departamento.NEXTVAL PRIMARY KEY,
-    codigo VARCHAR(2) NOT NULL,
-    nombre VARCHAR(40)
+CREATE SEQUENCE SEQ_DEPARTAMENTO
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- CREACION DE LA TABLA DEPARTAMENTO
+CREATE TABLE DEPARTAMENTO (
+    ID_DEPARTAMENTO NUMBER DEFAULT SEQ_DEPARTAMENTO.NEXTVAL PRIMARY KEY,
+    CODIGO VARCHAR(2) NOT NULL,
+    NOMBRE VARCHAR(40)
 );
 
 -- CREACION DE LA SECUENCIA MUNICIPIOS
-CREATE SEQUENCE seq_municipio
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- CREACION DE LA TABLA MUNICIPIOS  
-CREATE TABLE Municipio (
-    id_municipio NUMBER DEFAULT seq_municipio.NEXTVAL PRIMARY KEY,
-    departamento NUMBER NOT NULL,
-    codigo VARCHAR(2) NOT NULL,
-    nombre VARCHAR(40),
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento)
+CREATE SEQUENCE SEQ_MUNICIPIO
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- CREACION DE LA TABLA MUNICIPIOS
+CREATE TABLE MUNICIPIO (
+    ID_MUNICIPIO NUMBER DEFAULT SEQ_MUNICIPIO.NEXTVAL PRIMARY KEY,
+    DEPARTAMENTO NUMBER NOT NULL,
+    CODIGO VARCHAR(2) NOT NULL,
+    NOMBRE VARCHAR(40),
+    FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO)
 );
 
-
 -- CREACION DE LA SECUENCIA ROLES
-CREATE SEQUENCE seq_rol
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- Creación de la tabla roles
-CREATE TABLE Rol (
-    id_rol NUMBER DEFAULT seq_rol.NEXTVAL PRIMARY KEY,
-    nombre VARCHAR2(50)
+CREATE SEQUENCE SEQ_ROL
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- Creaciï¿½n de la tabla roles
+CREATE TABLE ROL (
+    ID_ROL NUMBER DEFAULT SEQ_ROL.NEXTVAL PRIMARY KEY,
+    NOMBRE VARCHAR2(50)
 );
 
 -- CREACION DE LA SECUENCIA ACCESOS
-CREATE SEQUENCE seq_acceso
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- Creación de la tabla accesos con relación a usuarios y roles
-CREATE TABLE Accesos (
-    id_acceso NUMBER DEFAULT seq_acceso.NEXTVAL PRIMARY KEY,
-    acceso VARCHAR2(250) NOT NULL
+CREATE SEQUENCE SEQ_ACCESO
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- Creaciï¿½n de la tabla accesos con relaciï¿½n a usuarios y roles
+CREATE TABLE ACCESOS (
+    ID_ACCESO NUMBER DEFAULT SEQ_ACCESO.NEXTVAL PRIMARY KEY,
+    ACCESO VARCHAR2(250) NOT NULL
 );
 
 -- CREACION DE LA SECUENCIA ROLES Y ACCESOS
-CREATE SEQUENCE seq_rol_acceso
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
+CREATE SEQUENCE SEQ_ROL_ACCESO
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
 
-CREATE TABLE RolAcceso (
-    ID NUMBER DEFAULT seq_rol_acceso.NEXTVAL PRIMARY KEY,
-    id_rol NUMBER,
-    id_acceso NUMBER,
-    FOREIGN KEY (id_rol) REFERENCES Rol(id_rol),
-    FOREIGN KEY (id_acceso) REFERENCES Accesos(id_acceso)
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+CREATE TABLE ROLACCESO (
+    ID NUMBER DEFAULT SEQ_ROL_ACCESO.NEXTVAL PRIMARY KEY,
+    ID_ROL NUMBER,
+    ID_ACCESO NUMBER,
+    FOREIGN KEY (ID_ROL) REFERENCES ROL(ID_ROL),
+    FOREIGN KEY (ID_ACCESO) REFERENCES ACCESOS(ID_ACCESO)
 );
 
 -- ***************************************************** TABLAS *******************************************************
 
 -- CREACION DE LA SECUENCIA USUARIOS
-CREATE SEQUENCE seq_usuario
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- Creación de la tabla usuarios
-CREATE TABLE Usuario (
-    id_usuario NUMBER DEFAULT seq_usuario.NEXTVAL PRIMARY KEY,
-    nombre_usuario VARCHAR2(50),
-    primer_nombre VARCHAR2(100) NOT NULL,
-    segundo_nombre VARCHAR2(100) NOT NULL,
-    primer_apellido VARCHAR2(100) NOT NULL,
-    segundo_apellido VARCHAR2(100) NOT NULL,
-    otros_apellidos VARCHAR2(100),
-    password VARCHAR2(50),
-    --normalizacion de direccion
-    calle VARCHAR2(100),
-    colonia VARCHAR2(100),
-    zona VARCHAR2(50),
-    ciudad VARCHAR2(50),
-    municipio NUMBER,
-    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
-    departamento NUMBER,
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
-    codigo_postal VARCHAR2(10),
-    telefono VARCHAR2(20),
-    nit VARCHAR2(12),
-    dpi VARCHAR2(20),
-    id_rol NUMBER,
-    FOREIGN KEY (id_rol) REFERENCES Rol(id_rol)
+CREATE SEQUENCE SEQ_USUARIO
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- Creaciï¿½n de la tabla usuarios
+CREATE TABLE USUARIO (
+    ID_USUARIO NUMBER DEFAULT SEQ_USUARIO.NEXTVAL PRIMARY KEY,
+    NOMBRE_USUARIO VARCHAR2(50),
+    PRIMER_NOMBRE VARCHAR2(100) NOT NULL,
+    SEGUNDO_NOMBRE VARCHAR2(100) NOT NULL,
+    PRIMER_APELLIDO VARCHAR2(100) NOT NULL,
+    SEGUNDO_APELLIDO VARCHAR2(100) NOT NULL,
+    OTROS_APELLIDOS VARCHAR2(100),
+    PASSWORD VARCHAR2(50),
+ --normalizacion de direccion
+    CALLE VARCHAR2(100),
+    COLONIA VARCHAR2(100),
+    ZONA VARCHAR2(50),
+    CIUDAD VARCHAR2(50),
+    MUNICIPIO NUMBER,
+    FOREIGN KEY (MUNICIPIO) REFERENCES MUNICIPIO(ID_MUNICIPIO),
+    DEPARTAMENTO NUMBER,
+    FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO),
+    CODIGO_POSTAL VARCHAR2(10),
+    TELEFONO VARCHAR2(20),
+    NIT VARCHAR2(12),
+    DPI VARCHAR2(20),
+    ID_ROL NUMBER,
+    FOREIGN KEY (ID_ROL) REFERENCES ROL(ID_ROL)
 );
 
 -- CREACION DE LA SECUENCIA CLIENTES
-CREATE SEQUENCE seq_cliente
-  START WITH 1  -- Valor inicial
-  INCREMENT BY 1  -- Incremento en cada siguiente valor
-  MINVALUE 1  -- Valor mínimo permitido
-  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-  NOCACHE  -- No almacenar valores en caché
-  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
+CREATE SEQUENCE SEQ_CLIENTE
+  START WITH 1 -- Valor inicial
+  INCREMENT BY 1 -- Incremento en cada siguiente valor
+  MINVALUE 1 -- Valor mï¿½nimo permitido
+  MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+  NOCACHE -- No almacenar valores en cachï¿½
+  NOCYCLE;
 
--- Creación de la tabla Clientes
-CREATE TABLE Cliente (
-    id_cliente NUMBER DEFAULT seq_cliente.NEXTVAL PRIMARY KEY,
-    primer_nombre VARCHAR2(100) NOT NULL,
-    segundo_nombre VARCHAR2(100) NOT NULL,
-    primer_apellido VARCHAR2(100) NOT NULL,
-    segundo_apellido VARCHAR2(100) NOT NULL,
-    otros_apellidos VARCHAR2(100),
-    --normalizacion de direccion
-    calle VARCHAR2(100),
-    colonia VARCHAR2(100),
-    zona VARCHAR2(50),
-    ciudad VARCHAR2(50),
-    municipio NUMBER,
-    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
-    departamento NUMBER,
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
-    codigo_postal VARCHAR2(10),
-    telefono VARCHAR2(20),
-    email VARCHAR(250),
-    nit VARCHAR2(12) UNIQUE,
-    dpi VARCHAR2(20) UNIQUE,
-    --auditoria
-    usuario_creacion NUMBER,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- Creaciï¿½n de la tabla Clientes
+CREATE TABLE CLIENTE (
+    ID_CLIENTE NUMBER DEFAULT SEQ_CLIENTE.NEXTVAL PRIMARY KEY,
+    PRIMER_NOMBRE VARCHAR2(100) NOT NULL,
+    SEGUNDO_NOMBRE VARCHAR2(100) NOT NULL,
+    PRIMER_APELLIDO VARCHAR2(100) NOT NULL,
+    SEGUNDO_APELLIDO VARCHAR2(100) NOT NULL,
+    OTROS_APELLIDOS VARCHAR2(100),
+ --normalizacion de direccion
+    CALLE VARCHAR2(100),
+    COLONIA VARCHAR2(100),
+    ZONA VARCHAR2(50),
+    CIUDAD VARCHAR2(50),
+    MUNICIPIO NUMBER,
+    FOREIGN KEY (MUNICIPIO) REFERENCES MUNICIPIO(ID_MUNICIPIO),
+    DEPARTAMENTO NUMBER,
+    FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO),
+    CODIGO_POSTAL VARCHAR2(10),
+    TELEFONO VARCHAR2(20),
+    EMAIL VARCHAR(250),
+    NIT VARCHAR2(12) UNIQUE,
+    DPI VARCHAR2(20) UNIQUE,
+ --auditoria
+    USUARIO_CREACION NUMBER,
+    FOREIGN KEY (USUARIO_CREACION) REFERENCES USUARIO(ID_USUARIO),
+    USUARIO_MOD NUMBER,
+    FOREIGN KEY (USUARIO_MOD) REFERENCES USUARIO(ID_USUARIO),
+    FECHA_CREACION DATE DEFAULT SYSDATE,
+    FECHA_MOD DATE,
+    ESTADO NUMBER(1) DEFAULT 1 CHECK (ESTADO IN (0, 1))
 );
-
--- CREACION DE LA SECUENCIA VENDEDORES
---CREATE SEQUENCE seq_vendedor
---  START WITH 1  -- Valor inicial
---  INCREMENT BY 1  -- Incremento en cada siguiente valor
---  MINVALUE 1  -- Valor mínimo permitido
---  MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---  NOCACHE  -- No almacenar valores en caché
---  NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- Creación de la tabla vendedores
---CREATE TABLE Vendedor (
---    id_vendedor NUMBER DEFAULT seq_vendedor.NEXTVAL PRIMARY KEY,
---    primer_nombre VARCHAR2(100) NOT NULL,
---    segundo_nombre VARCHAR2(100) NOT NULL,
---    primer_apellido VARCHAR2(100) NOT NULL,
---    segundo_apellido VARCHAR2(100) NOT NULL,
---    otros_apellidos VARCHAR2(100),
---    --normalizacion de direccion
---    calle VARCHAR2(100),
---    colonia VARCHAR2(100),
---    zona VARCHAR2(50),
---    ciudad VARCHAR2(50),
---    municipio NUMBER,
---    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
---    departamento NUMBER,
---    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
---    codigo_postal VARCHAR2(10),
---    telefono VARCHAR2(20),
---    nit VARCHAR2(12) UNIQUE,
---    dpi VARCHAR2(20) UNIQUE,
---    email VARCHAR(250),
---    --auditoria
---    usuario_creacion NUMBER,
---    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
---    usuario_mod NUMBER,
---    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
---    fecha_creacion DATE DEFAULT SYSDATE,
---    fecha_mod DATE,
---    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
---);
-
 
 -- CREACION DE LA SECUENCIA PROVEEDORES
-CREATE SEQUENCE seq_proveedor
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- Creación de la tabla vendedores
-CREATE TABLE Proveedor (
-    id_proveedor NUMBER DEFAULT seq_proveedor.NEXTVAL PRIMARY KEY,
-    primer_nombre VARCHAR2(100) NOT NULL,
-    segundo_nombre VARCHAR2(100) NOT NULL,
-    primer_apellido VARCHAR2(100) NOT NULL,
-    segundo_apellido VARCHAR2(100) NOT NULL,
-    otros_apellidos VARCHAR2(100),
-    --normalizacion de direccion
-    calle VARCHAR2(100),
-    colonia VARCHAR2(100),
-    zona VARCHAR2(50),
-    ciudad VARCHAR2(50),
-    municipio NUMBER,
-    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
-    departamento NUMBER,
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
-    codigo_postal VARCHAR2(10),
-    telefono VARCHAR2(20),
-    nit VARCHAR2(12) UNIQUE,
-    dpi VARCHAR2(20) UNIQUE,
-    email VARCHAR(250),
-    --auditoria
-    usuario_creacion NUMBER NOT NULL,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER NOT NULL,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE NOT NULL,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
+CREATE SEQUENCE SEQ_PROVEEDOR
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- Creaciï¿½n de la tabla vendedores
+CREATE TABLE PROVEEDOR (
+    ID_PROVEEDOR NUMBER DEFAULT SEQ_PROVEEDOR.NEXTVAL PRIMARY KEY,
+    PRIMER_NOMBRE VARCHAR2(100) NOT NULL,
+    SEGUNDO_NOMBRE VARCHAR2(100) NOT NULL,
+    PRIMER_APELLIDO VARCHAR2(100) NOT NULL,
+    SEGUNDO_APELLIDO VARCHAR2(100) NOT NULL,
+    OTROS_APELLIDOS VARCHAR2(100),
+ --normalizacion de direccion
+    CALLE VARCHAR2(100),
+    COLONIA VARCHAR2(100),
+    ZONA VARCHAR2(50),
+    CIUDAD VARCHAR2(50),
+    MUNICIPIO NUMBER,
+    FOREIGN KEY (MUNICIPIO) REFERENCES MUNICIPIO(ID_MUNICIPIO),
+    DEPARTAMENTO NUMBER,
+    FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO),
+    CODIGO_POSTAL VARCHAR2(10),
+    TELEFONO VARCHAR2(20),
+    NIT VARCHAR2(12) UNIQUE,
+    DPI VARCHAR2(20) UNIQUE,
+    EMAIL VARCHAR(250),
+ --auditoria
+    USUARIO_CREACION NUMBER NOT NULL,
+    FOREIGN KEY (USUARIO_CREACION) REFERENCES USUARIO(ID_USUARIO),
+    USUARIO_MOD NUMBER NOT NULL,
+    FOREIGN KEY (USUARIO_MOD) REFERENCES USUARIO(ID_USUARIO),
+    FECHA_CREACION DATE DEFAULT SYSDATE NOT NULL,
+    FECHA_MOD DATE,
+    ESTADO NUMBER(1) DEFAULT 1 CHECK (ESTADO IN (0, 1))
 );
 
+--CREACION DE LA SECUENCIA PRODUCTOS
+CREATE SEQUENCE SEQ_PRODUCTO
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
 
--- CREACION DE LA SECUENCIA PRODUCTOS
-CREATE SEQUENCE seq_producto
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
-  -- Creación de la tabla Productos
-CREATE TABLE Producto (
-    id_producto NUMBER DEFAULT seq_producto.NEXTVAL PRIMARY KEY,
-    id_proveedor NUMBER,
-    codigo VARCHAR2(20) UNIQUE NOT NULL,
-    nombre VARCHAR2(100) NOT NULL,
-    descripcion VARCHAR2(200) NOT NULL,
-    precio NUMBER NOT NULL,
-    stock NUMBER NOT NULL,
-    --auditoria
-    usuario_creacion NUMBER,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1)),
-    FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor)
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- Creaciï¿½n de la tabla Productos
+CREATE TABLE PRODUCTO (
+    ID_PRODUCTO NUMBER DEFAULT SEQ_PRODUCTO.NEXTVAL PRIMARY KEY,
+    ID_PROVEEDOR NUMBER,
+    CODIGO VARCHAR2(20) UNIQUE NOT NULL,
+    NOMBRE VARCHAR2(100) NOT NULL,
+    DESCRIPCION VARCHAR2(200) NOT NULL,
+    PRECIO NUMBER NOT NULL,
+    STOCK NUMBER NOT NULL,
+ --auditoria
+    USUARIO_CREACION NUMBER,
+    FOREIGN KEY (USUARIO_CREACION) REFERENCES USUARIO(ID_USUARIO),
+    USUARIO_MOD NUMBER,
+    FOREIGN KEY (USUARIO_MOD) REFERENCES USUARIO(ID_USUARIO),
+    FECHA_CREACION DATE DEFAULT SYSDATE,
+    FECHA_MOD DATE,
+    ESTADO NUMBER(1) DEFAULT 1 CHECK (ESTADO IN (0, 1)),
+    FOREIGN KEY (ID_PROVEEDOR) REFERENCES PROVEEDOR(ID_PROVEEDOR)
 );
-
-
--- CREACION DE LA SECUENCIA EMPRESAS
-CREATE SEQUENCE seq_empresa
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-
--- CREACION DE LA TABLA EMPRESA
-CREATE TABLE Empresa (
-    id_empresa NUMBER DEFAULT seq_empresa.NEXTVAL PRIMARY KEY,
-    nombre VARCHAR2(100),
-    --normalizacion de direccion
-    calle VARCHAR2(100),
-    colonia VARCHAR2(100),
-    zona VARCHAR2(50),
-    ciudad VARCHAR2(50),
-    municipio NUMBER,
-    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
-    departamento NUMBER,
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
-    codigo_postal VARCHAR2(10),
-    telefono VARCHAR2(20),
-    --auditoria
-    usuario_creacion NUMBER,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
-);
-
 
 -- CREACION DE LA SECUENCIA SUCURSAL
-CREATE SEQUENCE seq_sucursal
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
+CREATE SEQUENCE SEQ_SUCURSAL
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
 
 -- CREACION DE LA TABLA SUCURSAL
-CREATE TABLE Sucursal (
-    id_sucursal NUMBER DEFAULT seq_sucursal.NEXTVAL PRIMARY KEY,
-    id_empresa NUMBER,
-    FOREIGN KEY (id_empresa) REFERENCES Empresa(id_empresa),
-    nombre VARCHAR2(100),
-    --normalizacion de direccion
-    calle VARCHAR2(100),
-    colonia VARCHAR2(100),
-    zona VARCHAR2(50),
-    ciudad VARCHAR2(50),
-    municipio NUMBER,
-    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
-    departamento NUMBER,
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
-    codigo_postal VARCHAR2(10),
-    telefono VARCHAR2(20),
-    --auditoria
-    usuario_creacion NUMBER,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
-);
-
-
--- CREACION DE LA SECUENCIA PUNTO DE VENTA
-CREATE SEQUENCE seq_punto_venta
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-
--- CREACION DE LA TABLA PUNTO DE VENTA
-CREATE TABLE Punto_Venta (
-    id_punto_venta NUMBER DEFAULT seq_punto_venta.NEXTVAL PRIMARY KEY,
-    id_sucursal NUMBER,
-    FOREIGN KEY (id_sucursal) REFERENCES Sucursal(id_sucursal),
-    nombre VARCHAR2(100),
-    --normalizacion de direccion
-    calle VARCHAR2(100),
-    colonia VARCHAR2(100),
-    zona VARCHAR2(50),
-    ciudad VARCHAR2(50),
-    municipio NUMBER,
-    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
-    departamento NUMBER,
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
-    codigo_postal VARCHAR2(10),
-    telefono VARCHAR2(20),
-    --auditoria
-    usuario_creacion NUMBER,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
+CREATE TABLE SUCURSAL (
+    ID_SUCURSAL NUMBER DEFAULT SEQ_SUCURSAL.NEXTVAL PRIMARY KEY,
+    NOMBRE VARCHAR2(100),
+ --normalizacion de direccion
+    CALLE VARCHAR2(100),
+    COLONIA VARCHAR2(100),
+    ZONA VARCHAR2(50),
+    CIUDAD VARCHAR2(50),
+    MUNICIPIO NUMBER,
+    FOREIGN KEY (MUNICIPIO) REFERENCES MUNICIPIO(ID_MUNICIPIO),
+    DEPARTAMENTO NUMBER,
+    FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO),
+    CODIGO_POSTAL VARCHAR2(10),
+    TELEFONO VARCHAR2(20),
+ --auditoria
+    USUARIO_CREACION NUMBER,
+    FOREIGN KEY (USUARIO_CREACION) REFERENCES USUARIO(ID_USUARIO),
+    USUARIO_MOD NUMBER,
+    FOREIGN KEY (USUARIO_MOD) REFERENCES USUARIO(ID_USUARIO),
+    FECHA_CREACION DATE DEFAULT SYSDATE,
+    FECHA_MOD DATE,
+    ESTADO NUMBER(1) DEFAULT 1 CHECK (ESTADO IN (0, 1))
 );
 
 -- CREACION DE LA SECUENCIA VENTAS
-CREATE SEQUENCE seq_venta
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
+CREATE SEQUENCE SEQ_VENTA
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
 -- CREACION DE LA TABLA VENTAS
-CREATE TABLE Venta (
-    id_venta NUMBER DEFAULT seq_venta.NEXTVAL PRIMARY KEY,
-    id_cliente NUMBER NOT NULL,
-    id_usuario NUMBER NOT NULL,
-    id_forma_pago NUMBER NOT NULL,
-    id_punto_venta NUMBER,
-    guid VARCHAR2(250) UNIQUE NOT NULL,
-    fecha_venta DATE NOT NULL,
-    total NUMBER(10, 2),
-    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
-    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
-    FOREIGN KEY (id_forma_pago) REFERENCES Forma_Pago(id_forma_pago),
-    FOREIGN KEY (id_punto_venta) REFERENCES Punto_Venta(id_punto_venta)
+CREATE TABLE VENTA (
+    ID_VENTA NUMBER DEFAULT SEQ_VENTA.NEXTVAL PRIMARY KEY,
+    ID_CLIENTE NUMBER NOT NULL,
+    ID_USUARIO NUMBER NOT NULL,
+    ID_FORMA_PAGO NUMBER NOT NULL,
+    ID_SUCURSAL NUMBER,
+    GUID VARCHAR2(250) UNIQUE NOT NULL,
+    FECHA_VENTA DATE NOT NULL,
+    TOTAL NUMBER(10, 2),
+    FOREIGN KEY (ID_CLIENTE) REFERENCES CLIENTE(ID_CLIENTE),
+    FOREIGN KEY (ID_USUARIO) REFERENCES USUARIO(ID_USUARIO),
+    FOREIGN KEY (ID_FORMA_PAGO) REFERENCES FORMA_PAGO(ID_FORMA_PAGO),
+    FOREIGN KEY (ID_SUCURSAL) REFERENCES SUCURSAL(ID_SUCURSAL)
 );
 
 -- CREACION DE LA SECUENCIA DETALLE DE VENTA
-CREATE SEQUENCE seq_detalle_venta
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
+CREATE SEQUENCE SEQ_DETALLE_VENTA
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
 -- CREACION DE LA TABLA DETALLE DE VENTAS
-CREATE TABLE Detalle_Venta (
-    id_detalle_venta NUMBER DEFAULT seq_detalle_venta.NEXTVAL PRIMARY KEY,
-    id_venta NUMBER,
-    id_producto NUMBER,
-    cantidad NUMBER(10, 2),
-    descuento NUMBER,
-    impuestos NUMBER,
-    subtotal NUMBER,
-    total NUMBER(10, 2),
-    FOREIGN KEY (id_producto) REFERENCES Producto(id_producto),
-    FOREIGN KEY (id_venta) REFERENCES Venta(id_venta)
+CREATE TABLE DETALLE_VENTA (
+    ID_DETALLE_VENTA NUMBER DEFAULT SEQ_DETALLE_VENTA.NEXTVAL PRIMARY KEY,
+    ID_VENTA NUMBER,
+    ID_PRODUCTO NUMBER,
+    CANTIDAD NUMBER(10, 2),
+    DESCUENTO NUMBER,
+    IMPUESTOS NUMBER,
+    SUBTOTAL NUMBER,
+    TOTAL NUMBER(10, 2),
+    FOREIGN KEY (ID_PRODUCTO) REFERENCES PRODUCTO(ID_PRODUCTO),
+    FOREIGN KEY (ID_VENTA) REFERENCES VENTA(ID_VENTA)
 );
 
 -- CREACION DE LA SECUENCIA COMPRAS
-CREATE SEQUENCE seq_compra
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
+CREATE SEQUENCE SEQ_COMPRA
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
 -- CREACION DE LA TABLA COMPRAS
-CREATE TABLE Compra (
-    id_compra NUMBER DEFAULT seq_compra.NEXTVAL PRIMARY KEY,
-    id_proveedor NUMBER NOT NULL,
-    fecha_compra DATE NOT NULL,
-    total NUMBER(10, 2),
-    FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor),
-    --auditoria
-    usuario_creacion NUMBER,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
+CREATE TABLE COMPRA (
+    ID_COMPRA NUMBER DEFAULT SEQ_COMPRA.NEXTVAL PRIMARY KEY,
+    ID_PROVEEDOR NUMBER NOT NULL,
+    FECHA_COMPRA DATE NOT NULL,
+    TOTAL NUMBER(10, 2),
+    FOREIGN KEY (ID_PROVEEDOR) REFERENCES PROVEEDOR(ID_PROVEEDOR),
+ --auditoria
+    USUARIO_CREACION NUMBER,
+    FOREIGN KEY (USUARIO_CREACION) REFERENCES USUARIO(ID_USUARIO),
+    USUARIO_MOD NUMBER,
+    FOREIGN KEY (USUARIO_MOD) REFERENCES USUARIO(ID_USUARIO),
+    FECHA_CREACION DATE DEFAULT SYSDATE,
+    FECHA_MOD DATE,
+    ESTADO NUMBER(1) DEFAULT 1 CHECK (ESTADO IN (0, 1))
 );
 
 -- CREACION DE LA SECUENCIA DETALLE DE COMPRA
-CREATE SEQUENCE seq_detalle_compra
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
+CREATE SEQUENCE SEQ_DETALLE_COMPRA
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
+
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
 -- CREACION DE LA TABLA DETALLE DE COMPRAS
-CREATE TABLE Detalle_Compra (
-    id_detalle_compra NUMBER DEFAULT seq_detalle_compra.NEXTVAL PRIMARY KEY,
-    id_compra NUMBER,
-    id_producto NUMBER,
-    cantidad NUMBER(10, 2),
-    descuento NUMBER,
-    impuestos NUMBER,
-    subtotal NUMBER,
-    total NUMBER(10, 2),
-    FOREIGN KEY (id_producto) REFERENCES Producto(id_producto),
-    FOREIGN KEY (id_compra) REFERENCES Compra(id_compra)
+CREATE TABLE DETALLE_COMPRA (
+    ID_DETALLE_COMPRA NUMBER DEFAULT SEQ_DETALLE_COMPRA.NEXTVAL PRIMARY KEY,
+    ID_COMPRA NUMBER,
+    ID_PRODUCTO NUMBER,
+    CANTIDAD NUMBER(10, 2),
+    DESCUENTO NUMBER,
+    IMPUESTOS NUMBER,
+    SUBTOTAL NUMBER,
+    TOTAL NUMBER(10, 2),
+    FOREIGN KEY (ID_PRODUCTO) REFERENCES PRODUCTO(ID_PRODUCTO),
+    FOREIGN KEY (ID_COMPRA) REFERENCES COMPRA(ID_COMPRA)
 );
 
--- CREACION DE LA SECUENCIA ORDE DE COMPRA
---CREATE SEQUENCE seq_orden_compra
---    START WITH 1  -- Valor inicial
---    INCREMENT BY 1  -- Incremento en cada siguiente valor
---    MINVALUE 1  -- Valor mínimo permitido
---    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---    NOCACHE  -- No almacenar valores en caché
---    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- CREACION DE LA TABLA ORDENES DE COMPRA
---CREATE TABLE Orden_Compra (
---    id_orden_compra NUMBER DEFAULT seq_orden_compra.NEXTVAL PRIMARY KEY,
---    id_proveedor NUMBER,
---    fecha_orden DATE,
---    total NUMBER,
---    FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor)
---);
+--CREACION DE LA SECUENCIA ORDEN DE COMPRA
+CREATE SEQUENCE SEQ_ORDEN_COMPRA
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
 
--- CREACION DE LA SECUENCIA COTIZACIONES
---CREATE SEQUENCE seq_cotizacion
---    START WITH 1  -- Valor inicial
---    INCREMENT BY 1  -- Incremento en cada siguiente valor
---    MINVALUE 1  -- Valor mínimo permitido
---    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---    NOCACHE  -- No almacenar valores en caché
---    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
 
--- CREACION DE LA TABLA COTIZACIONES
---CREATE TABLE Cotizacion (
---    id_cotizacion NUMBER DEFAULT seq_cotizacion.NEXTVAL PRIMARY KEY,
---    id_cliente NUMBER,
---    fecha_cotizacion DATE NOT NULL,
---    detalle VARCHAR2(500),
---    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
---    --auditoria
---    usuario_creacion NUMBER,
---    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
---    usuario_mod NUMBER,
---    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
---    fecha_creacion DATE DEFAULT SYSDATE,
---    fecha_mod DATE,
---    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
---);
+--CREACION DE LA TABLA ORDENES DE COMPRA
+CREATE TABLE ORDEN_COMPRA (
+    ID_ORDEN_COMPRA NUMBER DEFAULT SEQ_ORDEN_COMPRA.NEXTVAL PRIMARY KEY,
+    ID_PROVEEDOR NUMBER,
+    FECHA_ORDEN DATE,
+    TOTAL NUMBER,
+    FOREIGN KEY (ID_PROVEEDOR) REFERENCES PROVEEDOR(ID_PROVEEDOR)
+);
 
 -- CREACION DE LA SECUENCIA COLABORADORES
-CREATE SEQUENCE seq_colaborador
-    START WITH 1  -- Valor inicial
-    INCREMENT BY 1  -- Incremento en cada siguiente valor
-    MINVALUE 1  -- Valor mínimo permitido
-    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
-    NOCACHE  -- No almacenar valores en caché
-    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
+CREATE SEQUENCE SEQ_COLABORADOR
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
 
-CREATE TABLE Colaborador (
-    id_colaborador NUMBER DEFAULT seq_colaborador.NEXTVAL PRIMARY KEY,
-    primer_nombre VARCHAR2(100) NOT NULL,
-    segundo_nombre VARCHAR2(100) NOT NULL,
-    primer_apellido VARCHAR2(100) NOT NULL,
-    segundo_apellido VARCHAR2(100) NOT NULL,
-    otros_apellidos VARCHAR2(100),
-    --normalizacion de direccion
-    calle VARCHAR2(100),
-    colonia VARCHAR2(100),
-    zona VARCHAR2(50),
-    ciudad VARCHAR2(50),
-    municipio NUMBER,
-    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
-    departamento NUMBER,
-    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
-    codigo_postal VARCHAR2(10),
-    telefono VARCHAR2(20),
-    nit VARCHAR2(12) UNIQUE,
-    dpi VARCHAR2(20) UNIQUE,
-    email VARCHAR(250),
-    --auditoria
-    usuario_creacion NUMBER,
-    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
-    usuario_mod NUMBER,
-    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
-    fecha_creacion DATE DEFAULT SYSDATE,
-    fecha_mod DATE,
-    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+CREATE TABLE COLABORADOR (
+    ID_COLABORADOR NUMBER DEFAULT SEQ_COLABORADOR.NEXTVAL PRIMARY KEY,
+    PRIMER_NOMBRE VARCHAR2(100) NOT NULL,
+    SEGUNDO_NOMBRE VARCHAR2(100) NOT NULL,
+    PRIMER_APELLIDO VARCHAR2(100) NOT NULL,
+    SEGUNDO_APELLIDO VARCHAR2(100) NOT NULL,
+    OTROS_APELLIDOS VARCHAR2(100),
+ --normalizacion de direccion
+    CALLE VARCHAR2(100),
+    COLONIA VARCHAR2(100),
+    ZONA VARCHAR2(50),
+    CIUDAD VARCHAR2(50),
+    MUNICIPIO NUMBER,
+    FOREIGN KEY (MUNICIPIO) REFERENCES MUNICIPIO(ID_MUNICIPIO),
+    DEPARTAMENTO NUMBER,
+    FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO),
+    CODIGO_POSTAL VARCHAR2(10),
+    TELEFONO VARCHAR2(20),
+    NIT VARCHAR2(12) UNIQUE,
+    DPI VARCHAR2(20) UNIQUE,
+    EMAIL VARCHAR(250),
+ --auditoria
+    USUARIO_CREACION NUMBER,
+    FOREIGN KEY (USUARIO_CREACION) REFERENCES USUARIO(ID_USUARIO),
+    USUARIO_MOD NUMBER,
+    FOREIGN KEY (USUARIO_MOD) REFERENCES USUARIO(ID_USUARIO),
+    FECHA_CREACION DATE DEFAULT SYSDATE,
+    FECHA_MOD DATE,
+    ESTADO NUMBER(1) DEFAULT 1 CHECK (ESTADO IN (0, 1))
 );
 
-
--- CREACION DE LA SECUENCIA CUADRES
---CREATE SEQUENCE seq_cuadre
---    START WITH 1  -- Valor inicial
---    INCREMENT BY 1  -- Incremento en cada siguiente valor
---    MINVALUE 1  -- Valor mínimo permitido
---    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---    NOCACHE  -- No almacenar valores en caché
---    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
---  
---CREATE TABLE Cuadre (
---    id_cuadre NUMBER DEFAULT seq_cuadre.NEXTVAL PRIMARY KEY,
---    id_punto_venta NUMBER,
---    fecha_cuadre DATE NOT NULL,
---    total_articulos NUMBER,
---    total_ventas NUMBER,
---    FOREIGN KEY (id_punto_venta) REFERENCES Punto_Venta(id_punto_venta),
---    --auditoria
---    usuario_creacion NUMBER,
---    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
---    usuario_mod NUMBER,
---    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
---    fecha_creacion DATE DEFAULT SYSDATE,
---    fecha_mod DATE,
---    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
---);
-  
--- CREACION DE LA SECUENCIA BITACORA
---CREATE SEQUENCE seq_bitacora
---    START WITH 1  -- Valor inicial
---    INCREMENT BY 1  -- Incremento en cada siguiente valor
---    MINVALUE 1  -- Valor mínimo permitido
---    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---    NOCACHE  -- No almacenar valores en caché
---    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- CREACION DE LA TABLA BITACORA
---CREATE TABLE Bitacora(
---    id_bitacora NUMBER DEFAULT seq_bitacora.NEXTVAL PRIMARY KEY,
-----    id_usuario NUMBER,
---    fecha_evento DATE,
---    evento VARCHAR2(200),
-----    FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
---    --auditoria
---    usuario_creacion NUMBER,
---    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
---    usuario_mod NUMBER,
---    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
---    fecha_creacion DATE DEFAULT SYSDATE,
---    fecha_mod DATE,
---    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
---);
-
 -- CREACION DE LA SECUENCIA BODEGAS
---CREATE SEQUENCE seq_bodega
---    START WITH 1  -- Valor inicial
---    INCREMENT BY 1  -- Incremento en cada siguiente valor
---    MINVALUE 1  -- Valor mínimo permitido
---    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---    NOCACHE  -- No almacenar valores en caché
---    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
-  
--- CREACION DE LA TABLA BODEGAS
---CREATE TABLE Bodega(
---    id_bodega NUMBER DEFAULT seq_bodega.NEXTVAL PRIMARY KEY,
---    nombre VARCHAR2(100),
---    --normalizacion de direccion
---    calle VARCHAR2(100),
---    colonia VARCHAR2(100),
---    zona VARCHAR2(50),
---    ciudad VARCHAR2(50),
---    municipio NUMBER,
---    FOREIGN KEY (municipio) REFERENCES Municipio(id_municipio),
---    departamento NUMBER,
---    FOREIGN KEY (departamento) REFERENCES Departamento(id_departamento),
---    codigo_postal VARCHAR2(10),
---    telefono VARCHAR2(20),
---    --auditoria
---    usuario_creacion NUMBER,
---    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
---    usuario_mod NUMBER,
---    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
---    fecha_creacion DATE DEFAULT SYSDATE,
---    fecha_mod DATE,
---    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1))
---);
+CREATE SEQUENCE SEQ_BODEGA
+    START WITH 1 -- Valor inicial
+    INCREMENT BY 1 -- Incremento en cada siguiente valor
+    MINVALUE 1 -- Valor mï¿½nimo permitido
+    MAXVALUE 999999999 -- Valor mï¿½ximo (puedes ajustarlo segï¿½n tus necesidades)
+    NOCACHE -- No almacenar valores en cachï¿½
+    NOCYCLE;
 
--- CREACION DE LA SECUENCIA TRASLADOS
---CREATE SEQUENCE seq_traslado
---    START WITH 1  -- Valor inicial
---    INCREMENT BY 1  -- Incremento en cada siguiente valor
---    MINVALUE 1  -- Valor mínimo permitido
---    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---    NOCACHE  -- No almacenar valores en caché
---    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
---  
----- CREACION DE LA TABLA TRASLADOS
---CREATE TABLE Traslado(
---    id_traslado NUMBER DEFAULT seq_traslado.NEXTVAL PRIMARY KEY,
---    origen_bodega_id NUMBER,
---    destino_bodega_id NUMBER,
---    fecha_traslado DATE,
---    --auditoria
---    usuario_creacion NUMBER,
---    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
---    usuario_mod NUMBER,
---    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
---    fecha_creacion DATE DEFAULT SYSDATE,
---    fecha_mod DATE,
---    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1)),
---    FOREIGN KEY (origen_bodega_id) REFERENCES Bodega(id_bodega),
---    FOREIGN KEY (destino_bodega_id) REFERENCES Bodega(id_bodega)
---);
---  
--- CREACION DE LA SECUENCIA ENVIOS
---CREATE SEQUENCE seq_envio
---    START WITH 1  -- Valor inicial
---    INCREMENT BY 1  -- Incremento en cada siguiente valor
---    MINVALUE 1  -- Valor mínimo permitido
---    MAXVALUE 999999999  -- Valor máximo (puedes ajustarlo según tus necesidades)
---    NOCACHE  -- No almacenar valores en caché
---    NOCYCLE;  -- No reiniciar después de llegar al valor máximo
---  
----- CREACION DE LA TABLA ENVIOS
---CREATE TABLE Envio(
---    id_envio NUMBER DEFAULT seq_envio.NEXTVAL PRIMARY KEY,
---    id_venta NUMBER,
---    --auditoria
---    usuario_creacion NUMBER,
---    FOREIGN KEY (usuario_creacion) REFERENCES Usuario(id_usuario),
---    usuario_mod NUMBER,
---    FOREIGN KEY (usuario_mod) REFERENCES Usuario(id_usuario),
---    fecha_creacion DATE DEFAULT SYSDATE,
---    fecha_mod DATE,
---    estado NUMBER(1) DEFAULT 1 CHECK (estado IN (0, 1)),
---    FOREIGN KEY (id_venta) REFERENCES Venta(id_venta)
---);
+-- No reiniciar despuï¿½s de llegar al valor mï¿½ximo
+
+-- CREACION DE LA TABLA BODEGAS
+CREATE TABLE BODEGA(
+    ID_BODEGA NUMBER DEFAULT SEQ_BODEGA.NEXTVAL PRIMARY KEY,
+    NOMBRE VARCHAR2(100),
+ --normalizacion de direccion
+    CALLE VARCHAR2(100),
+    COLONIA VARCHAR2(100),
+    ZONA VARCHAR2(50),
+    CIUDAD VARCHAR2(50),
+    MUNICIPIO NUMBER,
+    FOREIGN KEY (MUNICIPIO) REFERENCES MUNICIPIO(ID_MUNICIPIO),
+    DEPARTAMENTO NUMBER,
+    FOREIGN KEY (DEPARTAMENTO) REFERENCES DEPARTAMENTO(ID_DEPARTAMENTO),
+    CODIGO_POSTAL VARCHAR2(10),
+    TELEFONO VARCHAR2(20),
+ --auditoria
+    USUARIO_CREACION NUMBER,
+    FOREIGN KEY (USUARIO_CREACION) REFERENCES USUARIO(ID_USUARIO),
+    USUARIO_MOD NUMBER,
+    FOREIGN KEY (USUARIO_MOD) REFERENCES USUARIO(ID_USUARIO),
+    FECHA_CREACION DATE DEFAULT SYSDATE,
+    FECHA_MOD DATE,
+    ESTADO NUMBER(1) DEFAULT 1 CHECK (ESTADO IN (0, 1))
+);
